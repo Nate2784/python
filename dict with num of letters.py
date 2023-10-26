@@ -10,7 +10,7 @@ for word, length in word_length_dict.items():
     length_word_dict[length].append(word)
 
 #search for words by their length
-length_to_search = 2
+length_to_search = int(input("enter length to search: "))
 if length_to_search in length_word_dict:
     print(f"Words of length {length_to_search}: {length_word_dict[length_to_search]}")
 else:
